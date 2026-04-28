@@ -20,11 +20,15 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report
 from typing import Optional
 
-from preprocessing import preprocess
-from fairness import compute_fairness_report, FairnessReport
-from counterfactual import run_counterfactual_analysis, CounterfactualReport
-from explainability import compute_shap_explanation, ExplainabilityReport
-from mitigation import apply_reweighing, apply_threshold_adjustment, MitigationReport
+from core.preprocessing import preprocess
+from core.fairness import compute_fairness_report, FairnessReport
+from core.counterfactual import run_counterfactual_analysis, CounterfactualReport
+from core.explainability import compute_shap_explanation, ExplainabilityReport
+from core.mitigation import (
+    apply_reweighing,
+    apply_threshold_adjustment,
+    MitigationReport,
+)
 
 
 # ─── Pipeline result container ────────────────────────────────────────────────
